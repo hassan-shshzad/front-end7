@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Laptop Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+    }
+
+    header h1 {
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ccc;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      background-image: url('https://i.pinimg.com/1200x/c9/87/c4/c987c4c4f4be701a27f5cdf35c078cda.jpg');
+      
+      
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      padding: 80px 20px 60px;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+
+    .scroll-gallery {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .scroll-gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .features {
+      padding: 60px 20px;
+      background-color: #1a1a1a;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .feature img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .testimonials {
+      padding: 60px 20px;
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 15px;
+    }
+
+    .testimonial p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .cta {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #0f0f0f;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border: none;
+      background-color: #007aff;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .footer {
+      padding: 30px 20px;
+      background-color: #000;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #999;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #444;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MacBook Pro</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Performance. Redefined.</h2>
+    <p>Power meets elegance in the all-new MacBook Pro.</p>
+    <div class="scroll-gallery">
+      <img src="https://i.pinimg.com/736x/b0/6f/f7/b06ff7f0670715f6600c60009689f8a3.jpg" alt="MacBook1">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="MacBook2">
+      <img src="https://i.pinimg.com/736x/1f/ea/da/1feada069ba5b2dce4b24228e927f8b9.jpg" alt="MacBook3">
+      <img src="https://i.pinimg.com/1200x/ea/05/e6/ea05e6c9ee4325427a4dbd1d5d305713.jpg" alt="MacBook4">
+      <img src="https://i.pinimg.com/1200x/7f/fa/70/7ffa706f44b09ba67a96c63cc2c2ad4b.jpg" alt="MacBook5">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Top Features</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/processor.png" alt="M2 Chip">
+        <h3>Apple M2 Chip</h3>
+        <p>Unmatched speed and performance for all tasks.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/battery.png" alt="Battery">
+        <h3>18-Hour Battery</h3>
+        <p>Work all day on a single charge.</p>
+      </div>
+      <div class="feature">
+        <img src="display-fill.svg" alt="Display">
+        <h3>Retina Display</h3>
+        <p>Brilliant visuals with vibrant colors and contrast.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/ssd.png" alt="SSD">
+        <h3>Fast SSD</h3>
+        <p>Lightning-fast storage access speeds.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/keyboard.png" alt="Keyboard">
+        <h3>Magic Keyboard</h3>
+        <p>Comfortable typing with backlit keys.</p>
+      </div>
+      <div class="feature">
+        <src="wifi.svg" alt="Wi-Fi 6">
+        <h3>Wi-Fi 6</h3>
+        <p>Blazing-fast wireless connectivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="reviews">
+    <h2>What Users Say</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="User">
+        <p><strong>John D.</strong><br>This MacBook changed my workflow. Super fast!</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="User">
+        <p><strong>Sarah K.</strong><br>The display quality is stunning. Highly recommended.</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="User">
+        <p><strong>Alex R.</strong><br>Battery lasts all day and it’s super lightweight.</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/35.jpg" alt="User">
+        <p><strong>Emily J.</strong><br>Perfect for design and video editing.</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User">
+        <p><strong>Michael B.</strong><br>I love the performance and premium feel.</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="User">
+        <p><strong>Nina L.</strong><br>Best MacBook ever. Worth every penny!</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="User">
+        <p><strong>Chris W.</strong><br>It's sleek, powerful, and reliable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="pricing">
+    <h2>Ready to Own the Power?</h2>
+    <button>Buy Now</button>
+  </section>
+
+  <footer class="footer" id="contact">
+    <p>Contact us: support@apple.com | © 2025 Apple Inc.</p>
+    <div>
+      <a href="#">Privacy</a> |
+      <a href="#">Terms</a> |
+      <a href="#">Support</a>
+    </div>
+  </footer>
+
+</body>
+</html>
